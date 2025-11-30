@@ -1,4 +1,3 @@
-```markdown
 # Flower Species Classification with Convolutional Neural Networks
 
 A professional deep learning implementation for automated flower species classification using convolutional neural networks and TensorFlow.
@@ -67,11 +66,7 @@ This project represents enterprise-level deep learning implementation, showcasin
 
 ```bash
 pip install tensorflow tensorflow-datasets matplotlib numpy scikit-learn seaborn
-```
 
-## Usage
-
-```python
 # Load and preprocess dataset
 dataset, info = tfds.load('tf_flowers', with_info=True, as_supervised=True)
 
@@ -80,17 +75,11 @@ history = model.fit(train_dataset, validation_data=test_dataset, epochs=10)
 
 # Evaluate performance
 test_loss, test_acc = model.evaluate(test_dataset)
-```
 
-## Model Summary
 
+Model Summary
 The convolutional neural network architecture consists of sequential convolutional and pooling layers followed by fully connected layers with dropout regularization, specifically designed for multi-class flower species classification.
 
-## Results
-
+Results
 The model demonstrates strong classification performance across five flower species with comprehensive evaluation metrics and visualization tools for performance analysis.
 
-## License
-
-This project is available for educational and research purposes.
-```
